@@ -1,7 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import {auth} from './firebase-config';
 
 function App() {
+
+  const register = () => {}
+
+  const login =()  => {}
+
+  const logout = () => {}
+
   return (
     <div className="App">
       <header className="App-header">
