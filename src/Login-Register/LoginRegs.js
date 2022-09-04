@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import {
   createUserWithEmailAndPassword,
@@ -5,8 +6,8 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import "../App.css";
 
+import "./loginRegs.css";
 import {auth} from "../firebase-config";
 
 function LoginRegs(){
@@ -57,31 +58,31 @@ function LoginRegs(){
         <div>
           <h3> Register User </h3>
           <input
-            placeholder="Email..."
+            class="un " type="text" align="center" placeholder="Email"
             onChange={(event) => {
               setRegisterEmail(event.target.value);
             }}
           />
           <input
-            placeholder="Password..."
+             class="pass" type="password" align="center" placeholder="Password"
             onChange={(event) => {
               setRegisterPassword(event.target.value);
             }}
           />
   
-          <button onClick={register}> Create User</button>
+          <button className = "sign" onClick={register}> Create User</button>
         </div>
   
         <div>
-          <h3> Login </h3>
+          <h3 > Login </h3>
           <input
-            placeholder="Email..."
+            class="un " type="text" align="center" placeholder="Email"
             onChange={(event) => {
               setLoginEmail(event.target.value);
             }}
           />
           <input
-            placeholder="Password..."
+             class="pass" type="password" align="center" placeholder="Password"
             onChange={(event) => {
               setLoginPassword(event.target.value);
             }}
