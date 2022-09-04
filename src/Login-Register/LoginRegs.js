@@ -56,7 +56,7 @@ function LoginRegs(){
     return (
         <div className="App">
         <div>
-          <h3> Register User </h3>
+          <h3 className="sign" align="center"> Register User </h3>
           <input
             class="un " type="text" align="center" placeholder="Email"
             onChange={(event) => {
@@ -70,11 +70,11 @@ function LoginRegs(){
             }}
           />
   
-          <button className = "sign" onClick={register}> Create User</button>
+          <button className = "submit" onClick={register}> Create User</button>
         </div>
   
         <div>
-          <h3 > Login </h3>
+          <h3 className="sign" align="center"> Login </h3>
           <input
             class="un " type="text" align="center" placeholder="Email"
             onChange={(event) => {
@@ -88,13 +88,13 @@ function LoginRegs(){
             }}
           />
   
-          <button onClick={login}> Login</button>
+          <button className ="submit"onClick={login}> Login</button>
         </div>
   
         {/* <h4> User Logged In: </h4>
         {user?.email} */}
   
-        <button onClick={logout}> Sign Out </button>
+        {/* <button onClick={logout}> Sign Out </button> */}
       </div>
     );
 }
