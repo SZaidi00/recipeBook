@@ -58,7 +58,7 @@ function LoginRegs(){
         <div align ="center ">
           <h3 className="sign" align="center"> Register User </h3>
           <input
-            class="un " type="text" align="center" placeholder="Email"
+            class="email " type="text" align="center" placeholder="Email"
             onChange={(event) => {
               setRegisterEmail(event.target.value);
             }}
@@ -76,7 +76,7 @@ function LoginRegs(){
         <div align ="center">
           <h3 className="sign" align="center"> Login </h3>
           <input
-            class="un " type="text" align="center" placeholder="Email"
+            class="email " type="text" align="center" placeholder="Email"
             onChange={(event) => {
               setLoginEmail(event.target.value);
             }}
@@ -89,6 +89,7 @@ function LoginRegs(){
           />
           <br />
           <button className ="submit" onClick={login}> Login</button>
+          <br/>
         </div>
   
         {/* <h4> User Logged In: </h4>
