@@ -55,7 +55,7 @@ function LoginRegs(){
     
     return (
         <div className="App">
-        <div>
+        <div align ="center ">
           <h3 className="sign" align="center"> Register User </h3>
           <input
             class="un " type="text" align="center" placeholder="Email"
@@ -69,11 +69,11 @@ function LoginRegs(){
               setRegisterPassword(event.target.value);
             }}
           />
-  
-          <button className = "submit" onClick={register}> Create User</button>
+          <br/>
+          <button className = "submit"  onClick={register}> Create User</button>
         </div>
   
-        <div>
+        <div align ="center">
           <h3 className="sign" align="center"> Login </h3>
           <input
             class="un " type="text" align="center" placeholder="Email"
@@ -82,13 +82,13 @@ function LoginRegs(){
             }}
           />
           <input
-             class="pass" type="password" align="center" placeholder="Password"
+             class="pass" type="password" align ="center" placeholder="Password"
             onChange={(event) => {
               setLoginPassword(event.target.value);
             }}
           />
-  
-          <button className ="submit"onClick={login}> Login</button>
+          <br />
+          <button className ="submit" onClick={login}> Login</button>
         </div>
   
         {/* <h4> User Logged In: </h4>
