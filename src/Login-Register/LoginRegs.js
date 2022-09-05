@@ -9,6 +9,7 @@ import {
 
 import "./loginRegs.css";
 import {auth} from "../firebase-config";
+import {Navigate} from 'react-router-dom'
 
 function LoginRegs(){
   const [registerEmail, setRegisterEmail] = useState("");
@@ -46,6 +47,7 @@ function LoginRegs(){
     } catch (error) {
       console.log(error.message);
     }
+
   };
 
   const logout = async () => {
@@ -92,8 +94,8 @@ function LoginRegs(){
           <br/>
         </div>
   
-        {/* <h4> User Logged In: </h4>
-        {user?.email} */}
+        <h4 className="sign"> User Logged In: </h4>
+        {user?.email}
   
         {/* <button onClick={logout}> Sign Out </button> */}
       </div>

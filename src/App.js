@@ -1,13 +1,20 @@
 import "./App.css";
+import { Route,Routes } from "react-router-dom";
 
 
 
 import LoginRegs from "./Login-Register/LoginRegs";
 
+
 function App() {
 
   return (
-    <LoginRegs/>
+
+  <Routes>
+      <Route path="/" element={<LoginRegs/>} />
+      {/* <Route path="/user/:name" component={UserComponent} /> */}
+  </Routes>
+    
   );
 }
 
